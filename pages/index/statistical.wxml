@@ -1,0 +1,44 @@
+<view class="container">
+  <view class='wrap'>
+    <view>
+      <view class='date-show'>
+        <view class='lt-arrow' bindtap='lastMonth'>
+          <image src='/images/rightarr.jpg' mode='aspectFit'></image>
+        </view>
+        {{year}}年{{month}}月
+        <view class='rt-arrow' bindtap='nextMonth'>
+          <image src='/images/rightarr.jpg' mode='aspectFit'></image>
+        </view>
+      </view>
+    </view>
+    <view class='header'>
+      <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+        <view></view>
+      </view>
+    </view>
+    <view class='date-box'>
+      <view wx:for='{{dateArr}}' class='{{isToday == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}'>
+        <view class='date-head'>
+          <view>{{item.dateNum}}</view>
+        </view>
+        <!-- <view class='date-weight'>{{item.weight}}</view> -->
+      </view>
+    </view>
+  </view>
+  <view class='box-row'>
+    <view class='flex-1'><text class='orange-point'></text>  <text>总共加入天数</text></view>
+    <view class='flex-1 text-right'><text class='orange'>10</text><text>天</text></view>
+  </view>
+    <view class='box-row'>
+    <view class='flex-1'><text class='green-point'></text>  <text>已坚持天数</text></view>
+    <view class='flex-1 text-right'><text class='green'>4</text><text>天</text></view>
+  </view>
+    <view class='box-row'>
+    <view class='flex-1'><text class='blue-point'></text>  <text>连续签到天数</text></view>
+    <view class='flex-1 text-right'><text class='blue'>2</text><text>天</text></view>
+  </view>
+    <view class='box-row'>
+    <view class='flex-1'><text class='red-point'></text>  <text>参与人数</text></view>
+    <view class='flex-1 text-right'><text class='red'>1453</text><text>人</text></view>
+  </view>
+</view>

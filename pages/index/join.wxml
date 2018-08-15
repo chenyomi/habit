@@ -1,0 +1,48 @@
+<form class="container">
+  <view class='join-box'>
+    <view class='box-row'>
+      <view class='left-title'>习惯类别</view>
+      <view class='right-intro'>行规</view>
+    </view>
+    <view class='box-row'>
+      <view class='left-title'>习惯标题</view>
+      <view class='right-intro'>仪容仪表自查</view>
+    </view>
+  </view>
+  <view class='join-box'>
+    <view class='box-row'>
+      <view class='left-title'>重复次数</view>
+      <view class='right-intro'>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">{{array[index]}} ▼</picker>
+      </view>
+    </view>
+    <view class='box-row'>
+      <view class='left-title'>提醒时间</view>
+      <view class='right-intro'>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange" style='margin-left:16rpx'>
+          <view class="picker">
+            {{time}} ▼
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class='join-box'>
+    <view class='box-col'>
+      <text>写一句鼓励自己的话</text>
+      <view>
+        <view class="section">
+          <input placeholder="想象一下美好的可能" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='join-box-button'>
+    <button catchtap='gotoPunching'>确定</button>
+  </view>
+</form>

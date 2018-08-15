@@ -1,0 +1,23 @@
+<!--pages/index/list.wxml-->
+<scroll-view scroll-y style="height: {{scrollHeight}}px;" bindscrolltolower="lower" scroll-top="{{scrollTop}}">
+  <view wx:for="{{list}}" wx:key="{{index}}" class='item-bg' >
+    <view class='box-row' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}};background:#fff;height:160rpx;" catchtap='gotoDetai'>
+      <view style='width:100rpx'>
+        <image src='{{item.icon}}' mode='aspectFit' style='height:90rpx;width:90rpx'></image>
+      </view>
+      <view class='flex-1 item-intro'>
+        <view>{{item.txt}}</view>
+        <text>已坚持20天</text>
+      </view>
+      <view style='width:60rpx;'>
+        <icon type="success" size="25" />
+      </view>
+    </view>
+    <view data-index="{{index}}" bindtap="delItem" class="inner del">
+     <image src='/images/seticon.png' mode='aspectFit' style='height:60rpx;width:60rpx'></image>
+    </view>
+  </view>
+  <view class='addHabit' catchtap='gotoCreat'>
+    <image src='/images/add.png' mode='aspectFit' style='height:60rpx;width:60rpx'></image>
+  </view>
+</scroll-view>

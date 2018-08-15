@@ -1,0 +1,12 @@
+/* pages/index/join.wxss */
+.container{justify-content: flex-start;padding: 30rpx;display: block}
+.join-box{background: #fff;border-radius: 20rpx;width: 100%;margin-bottom: 30rpx}
+.join-box .box-row{width: 100%;font-size: 30rpx;line-height: 90rpx;padding: 0 35rpx;border-bottom: 1rpx solid #eff1f8;}
+.join-box .box-row:last-child{border: none}
+.join-box .box-col{width: 100%;font-size: 30rpx;line-height: 70rpx;padding: 10rpx 35rpx 30rpx;border-bottom: 1rpx solid #eff1f8;box-sizing: border-box}
+.join-box .box-col input{background: #f3f5fb;color: #b3b8c6;height: 80rpx;padding: 0 26rpx;border-radius: 16rpx}
+.join-box-button{width: 100%}
+.join-box-button button{background:#3694f5;font-size: 31rpx;color: #fff;line-height: 90rpx;border-radius: 20rpx;border: none;outline: none}
+.left-title{color: #33334b;}
+.right-intro{color: #8c94ab;}
+picker{color: #3694f5;display: inline-block}

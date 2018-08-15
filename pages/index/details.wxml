@@ -1,0 +1,97 @@
+<view class="container">
+  <view class='box-row' style='padding:8px 30rpx;background:#fff;align-items: center;margin-bottom:8px'>
+    <view class='left-icon'>
+      <image src='/images/ic_24.png' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+    </view>
+    <view class="expertInfo flex-1">
+      <view class="name">仪容仪表自查</view>
+      <view class="answerHistory">已有100参与者</view>
+    </view>
+    <view style="height:70rpx;width:70rpx">
+      <image src='/images/jiangbei.jpg' mode='aspectFit' style='height:70rpx;width:70rpx'></image>
+    </view>
+    <view>
+      <button class='join' catchtap='gotoJoin'>加入</button>
+    </view>
+  </view>
+  <scroll-view scroll-y style="height: {{scrollHeight}}px;" bindscrolltolower="lower" scroll-top="{{scrollTop}}">
+    <view class='box-row'>
+      <view>
+        <image src='/images/jiangbei.jpg' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+      </view>
+      <view style='padding-left:30rpx'>
+        <view class='list-name'>名称</view>
+        <view class='list-intro'>坚持321天</view>
+        <view class='list-content'>打卡打卡，不打卡不习惯</view>
+        <view class='imglist'>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+        </view>
+        <view style='position:relative'>
+          <text style='vertical-align: middle;color:#404056;font-size: 34rpx'>10:30</text>
+          <view class='timers'>
+            <text style='color:#a9afc0;'>10</text>
+             <image src='/images/heart.png' mode='aspectFit'></image>
+              <image src='/images/heart-no.png' mode='aspectFit' style='display:none'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+     <view class='box-row'>
+      <view>
+        <image src='/images/jiangbei.jpg' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+      </view>
+      <view style='padding-left:30rpx'>
+        <view class='list-name'>名称</view>
+        <view class='list-intro'>坚持321天</view>
+        <view class='list-content'>打卡打卡，不打卡不习惯</view>
+        <view class='imglist'>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+        </view>
+        <view style='position:relative'>
+          <text style='vertical-align: middle;color:#404056;font-size: 34rpx'>10:30</text>
+          <view class='timers'>
+            <text style='color:#a9afc0;'>10</text>
+             <image src='/images/heart.png' mode='aspectFit'></image>
+              <image src='/images/heart-no.png' mode='aspectFit' style='display:none'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+     <view class='box-row'>
+      <view>
+        <image src='/images/jiangbei.jpg' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+      </view>
+      <view style='padding-left:30rpx'>
+        <view class='list-name'>名称</view>
+        <view class='list-intro'>坚持321天</view>
+        <view class='list-content'>打卡打卡，不打卡不习惯</view>
+        <view class='imglist'>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+        </view>
+        <view style='position:relative'>
+          <text style='vertical-align: middle;color:#404056;font-size: 34rpx'>10:30</text>
+          <view class='timers'>
+            <text style='color:#a9afc0;'>10</text>
+             <image src='/images/heart.png' mode='aspectFit'></image>
+              <image src='/images/heart-no.png' mode='aspectFit' style='display:none'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

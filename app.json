@@ -1,0 +1,25 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/index/creat",
+    "pages/index/punching",
+    "pages/index/statistical",
+    "pages/index/join",
+    "pages/index/list",
+    "pages/index/details",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "21天+21天",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

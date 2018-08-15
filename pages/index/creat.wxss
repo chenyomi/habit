@@ -1,0 +1,15 @@
+/* pages/index/creat.wxss */
+
+.tab-h{height: 80rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx; font-size: 32rpx; white-space: nowrap;position: fixed;top: 0; left: 0; z-index: 99;border-bottom: 1rpx solid #eff1f8;background: #fff}
+.tab-item{margin:0 35rpx;display: inline-block;}
+.tab-item.active{color: #3694f5;position: relative;}
+.tab-item.active:after{ content: "";display: block;height: 6rpx;width: 58rpx;background: #3694f5;position: absolute; bottom: 0;left: 5rpx;border-radius: 16rpx;}
+.item-ans{ width: 100%;display: flex; flex-grow: row no-wrap;justify-content: space-between; padding: 20rpx 30rpx;box-sizing: border-box; height: 180rpx;align-items: center;border-bottom: 1px solid #F2F2F2;}
+.item-ans .box-row{align-items: center}
+.avatar{width: 100rpx;height: 100rpx;position: relative;padding-right: 30rpx;}
+.avatar .doyen{width: 40rpx;height: 40rpx;position: absolute;bottom: -2px;right: 20rpx;}
+.expertInfo{font-size: 28rpx;flex-grow: 2;color: #B0B0B0;line-height: 1.5em;padding-left: 30rpx}
+.expertInfo .name{font-size: 34rpx;color:#000;margin-bottom: 10rpx;}
+.left-icon{height: 100rpx;}
+.tab-content{padding-top: 80rpx;}
+.scoll-h{height: 100%;}

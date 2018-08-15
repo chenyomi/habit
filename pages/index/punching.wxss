@@ -1,0 +1,36 @@
+/* pages/index/details.wxss */
+
+.container{padding: 0;display: block}
+.expertInfo{font-size: 28rpx;color: #B0B0B0;line-height: 1.5em;padding-left: 30rpx}
+.expertInfo .name{font-size: 34rpx;color:#000;margin-bottom: 10rpx;}
+.left-icon{height: 100rpx;}
+.join{line-height: 70rpx;padding: 0 30rpx;border-radius: 70rpx;border: none;outline: 0;background: #3694f5;color: #fff;font-size: 30rpx;margin-left: 20rpx}
+.box-row{padding: 30rpx; justify-content: flex-start;border-bottom: 2rpx solid #eff1f8;background: #fff;}
+.box-row .list-name{font-size:34rpx;color:#000;margin-bottom:10rpx;}
+.box-row .list-intro{font-size:28rpx;color:#B0B0B0;margin-bottom:10rpx;}
+.box-row .list-content{font-size:30rpx;color:#000;margin-bottom:10rpx;}
+.imglist{padding: 10rpx 0 0;margin-bottom: 10rpx;}
+.imglist image{margin-right: 8rpx}
+.timers{position: absolute;right: 10rpx;top: 0;height: 50rpx}
+.timers text{vertical-align: middle;font-size: 34rpx}
+.timers image{height:40rpx;width:40rpx;vertical-align: middle;margin-left: 10rpx}
+.item1{background: #fff;padding: 0 30rpx;border-bottom: 1rpx solid #eff1f8}
+.item1 text{font-size: 30rpx;color:#8c94ab;display: inline-block;padding: 0 16rpx;line-height: 40px;}
+.item1 text.active{color: #3694f5;border-bottom: 5rpx solid #3694f5;font-weight: bold}
+
+.item2{background:#fff;margin-bottom:16rpx}
+.item2 image{margin-bottom: 10rpx}
+.item2 view{font-size: 30rpx;color: #8c94ab}
+.item2 view .bt{color: #ffa00b;border: 1rpx solid #ffa00b;padding: 0 30rpx; display: inline-block; line-height: 50rpx;border-radius: 50rpx}
+
+.table-body{font-size: 30rpx;color: #8c94ab;}
+.table-body .box-row{border: none}
+.table-body .box-row:nth-child(even){background:#fbfcfd }
+
+.month{color: #33334b;font-size: 28rpx;}
+.month.no{color: #8c94ab;}
+
+.rank-day{margin-top: 30rpx;color: #333;font-weight: bold;line-height: 60rpx}
+.rank-intro{line-height: 60rpx;color: #8c94ab;font-size: 30rpx}
+
+.table-title{font-size: 32rpx}

@@ -1,0 +1,41 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background: #f3f0ee;
+} 
+page{height: 100%;}
+
+/*伸缩盒子*/
+.box-row{ width: 100%; display: flex;flex-direction: row;justify-content:space-between;box-sizing: border-box}
+.flex-row{width: 100%; display: flex;flex-direction: row;justify-content:space-between;box-sizing: border-box}
+.flex-1{flex: 1; box-sizing: border-box}
+.flex-2{flex: 2;box-sizing: border-box}
+.flex-3{flex: 3;box-sizing: border-box}
+.flex-4{flex: 4;box-sizing: border-box}
+.flex-5{flex: 5;box-sizing: border-box}
+.flex-6{flex: 6;box-sizing: border-box}
+.flex-7{flex: 7;box-sizing: border-box}
+/*icon*/
+.xs-icon{ height: 40rpx; width: 40rpx;vertical-align: middle}
+.sm-icon{ height: 60rpx; width: 60rpx;vertical-align: middle}
+.md-icon{ height: 80rpx; width: 80rpx;vertical-align: middle}
+.bg-icon{ height: 100rpx; width: 100rpx;vertical-align: middle}
+.max-icon{ height: 140rpx; width: 140rpx;vertical-align: middle}
+/*文本居中*/
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+
+/*空隙*/
+
+.space-60{height: 60px; width: 100%}
+.space-50{height: 50px; width: 100%}
+.space-40{height: 40px; width: 100%}
+/*滚动容器*/
+.list-scroll{width: 100%;height: 100%;  }

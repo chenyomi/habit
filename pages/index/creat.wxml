@@ -1,0 +1,32 @@
+<!--pages/index/creat.wxml-->
+<view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">行规</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">学习</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">技能</view>
+    <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">成长</view>
+    <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">公益</view>
+    <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">实践</view>
+    <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">健康</view>
+    <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view>
+  </scroll-view>
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item wx:for="{{expertList}}" wx:for-index="index" wx:for-item="item">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:for="{{item}}" wx:for-index="index2" wx:for-item="item2">
+          <view class="item-ans" catchtap='gotoList'>
+            <view class='box-row'>
+              <view class='left-icon'>
+                <image src='{{item2.icon}}' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+              </view>
+              <view class="expertInfo flex-1">
+                <view class="name">{{item2.name}}</view>
+                <view class="answerHistory">已有100参与者</view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='habit'>
+    <image src='/images/img_none.png' mode='aspectFit' style='height:240rpx'></image>
+
+  </view>
+  <view class='habit-intro'>
+    <text>21天养成一个习惯</text>
+  </view>
+  <view class='habit-btn'>
+    <button catchtap='gotoCreat' >+ 创建一个习惯</button>
+  </view>
+</view>

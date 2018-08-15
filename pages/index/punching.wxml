@@ -1,0 +1,285 @@
+<view class="container">
+  <view class='box-row item1'>
+    <view class='flex-1 text-center {{tabid==0?"active":""}}' catchtap='tabChange' data-id='0'>
+      <text class='{{tabid==0?"active":""}}'>我的</text>
+    </view>
+    <view class='flex-1 text-center {{tabid==1?"active":""}}' catchtap='tabChange' data-id='1'>
+      <text class='{{tabid==1?"active":""}}'>排行榜</text>
+    </view>
+  </view>
+  <scroll-view scroll-y style="height: {{scrollHeight}}px;" bindscrolltolower="lower" scroll-top="{{scrollTop}}">
+    <view class='tab-content1' style='{{tabid==0?"":"display:none"}}'>
+      <view class='item2'>
+        <view class='box-col text-center' style='padding:100rpx 0;'>
+          <image src='/images/daka2.jpg' mode='aspectFit' style='height:160rpx;width:160rpx;'></image>
+          <view>今日未打卡</view>
+          <view>今日已打卡</view>
+          <view>
+            <view class='bt'>记录一下</view>
+          </view>
+        </view>
+      </view>
+      <view class='box-row' style='border-bottom:1rpx solid #eff1f8'>
+        <view class='flex-1' style='font-size:31rpx;color:#33334b;line-height:60rpx'>坚持统计</view>
+        <view class='text-right flex-1' style='font-size:31rpx;color:#8c94ab;line-height:60rpx' catchtap='gotoStatistical'>
+          <text style='vertical-align: middle;margin-right:16rpx'>已坚持17天</text>
+          <image src='/images/rightarr.jpg' mode='aspectFit' style='height:30rpx;width:18rpx;vertical-align: middle'></image>
+        </view>
+      </view>
+      <view class='box-row' style='margin-bottom:16rpx'>
+        <view class='flex-1 text-center'>
+          <view class='month'>周一</view>
+          <view style='height:45rpx;margin-top:25rpx'>
+            <image src='/images/dakaicon2.jpg' mode='aspectFit' style='height:45rpx;width:45rpx;'></image>
+          </view>
+        </view>
+        <view class='flex-1 text-center'>
+          <view class='month'>周二</view>
+          <view style='height:45rpx;margin-top:25rpx'>
+            <image src='/images/dakaicon2.jpg' mode='aspectFit' style='height:45rpx;width:45rpx;'></image>
+          </view>
+        </view>
+        <view class='flex-1 text-center'>
+          <view class='month'>周三</view>
+          <view style='height:45rpx;margin-top:25rpx'>
+            <image src='/images/dakaicon2.jpg' mode='aspectFit' style='height:45rpx;width:45rpx;'></image>
+          </view>
+        </view>
+        <view class='flex-1 text-center'>
+          <view class='month'>周四</view>
+          <view style='height:45rpx;margin-top:25rpx'>
+            <image src='/images/dakaicon2.jpg' mode='aspectFit' style='height:45rpx;width:45rpx;'></image>
+          </view>
+        </view>
+        <view class='flex-1 text-center'>
+          <view class='month no'>周五</view>
+          <view style='height:45rpx;margin-top:25rpx'>
+            <image src='/images/dakaicon1.jpg' mode='aspectFit' style='height:45rpx;width:45rpx;'></image>
+          </view>
+        </view>
+        <view class='flex-1 text-center'>
+          <view class='month no'>周六</view>
+          <view style='height:45rpx;margin-top:25rpx'>
+            <image src='/images/dakaicon1.jpg' mode='aspectFit' style='height:45rpx;width:45rpx;'></image>
+          </view>
+        </view>
+        <view class='flex-1 text-center'>
+          <view class='month no'>周日</view>
+          <view style='height:45rpx;margin-top:25rpx'>
+            <image src='/images/dakaicon1.jpg' mode='aspectFit' style='height:45rpx;width:45rpx;'></image>
+          </view>
+        </view>
+      </view>
+      <view class='box-row'>
+        <view>
+          <image src='/images/jiangbei.jpg' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+        </view>
+        <view style='padding-left:30rpx;heigth:auto;overflow:hidden'>
+          <view class='list-name'>名称</view>
+          <view class='list-intro'>坚持321天</view>
+          <view class='list-content'>打卡打卡，不打卡不习惯</view>
+          <view class='imglist'>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          </view>
+          <view style='position:relative'>
+            <text style='vertical-align: middle;color:#404056;font-size: 34rpx'>10:30</text>
+            <view class='timers'>
+              <text style='color:#a9afc0;'>10</text>
+              <image src='/images/heart.png' mode='aspectFit'></image>
+              <image src='/images/heart-no.png' mode='aspectFit' style='display:none'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='box-row'>
+        <view>
+          <image src='/images/jiangbei.jpg' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+        </view>
+        <view style='padding-left:30rpx'>
+          <view class='list-name'>名称</view>
+          <view class='list-intro'>坚持321天</view>
+          <view class='list-content'>打卡打卡，不打卡不习惯</view>
+          <view class='imglist'>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          </view>
+          <view style='position:relative'>
+            <text style='vertical-align: middle;color:#404056;font-size: 34rpx'>10:30</text>
+            <view class='timers'>
+              <text style='color:#a9afc0;'>10</text>
+              <image src='/images/heart.png' mode='aspectFit'></image>
+              <image src='/images/heart-no.png' mode='aspectFit' style='display:none'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='box-row'>
+        <view>
+          <image src='/images/jiangbei.jpg' mode='aspectFit' style='height:100rpx;width:100rpx'></image>
+        </view>
+        <view style='padding-left:30rpx'>
+          <view class='list-name'>名称</view>
+          <view class='list-intro'>坚持321天</view>
+          <view class='list-content'>打卡打卡，不打卡不习惯</view>
+          <view class='imglist'>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+            <image src='/images/cmt.jpg' mode='aspectFit' style='height:160rpx;width:160rpx' catchtap='previewImage'></image>
+          </view>
+          <view style='position:relative'>
+            <text style='vertical-align: middle;color:#404056;font-size: 34rpx'>10:30</text>
+            <view class='timers'>
+              <text style='color:#a9afc0;'>10</text>
+              <image src='/images/heart.png' mode='aspectFit'></image>
+              <image src='/images/heart-no.png' mode='aspectFit' style='display:none'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='tab-content2' style='{{tabid==1?"":"display:none"}}'>
+      <view class='box-row text-center' style='align-items: flex-end'>
+        <view class='flex-1'>
+          <image src='/images/rank2.jpg' mode='aspectFit' style='height:160rpx;width:160rpx;'></image>
+          <view class='rank-day'>123天</view>
+          <view class='rank-intro'>甲</view>
+        </view>
+        <view class='flex-1'>
+          <image src='/images/rank1.jpg' mode='aspectFit' style='height:200rpx;width:160rpx;'></image>
+          <view class='rank-day'>123天</view>
+          <view class='rank-intro'>乙</view>
+        </view>
+        <view class='flex-1'>
+          <image src='/images/rank3.jpg' mode='aspectFit' style='height:160rpx;width:160rpx;'></image>
+          <view class='rank-day'>123天</view>
+          <view class='rank-intro'>丙</view>
+        </view>
+      </view>
+      <view class='table-title box-row text-center'>
+        <view class='flex-1'>
+          排名
+        </view>
+        <view class='flex-1'>
+          用户名
+        </view>
+        <view class='flex-1'>
+          坚持天数
+        </view>
+      </view>
+      <view class='table-body'>
+       
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            4
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            5
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            6
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            7
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            8
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            9
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            10
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+        <view class='box-row text-center'>
+          <view class='flex-1'>
+            11
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+         <view class='box-row text-center'>
+          <view class='flex-1'>
+            12
+          </view>
+          <view class='flex-1'>
+            梵蒂冈
+          </view>
+          <view class='flex-1'>
+            99
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
