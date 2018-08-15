@@ -1,25 +1,25 @@
 //app.js
 App({
-  onLaunch: function () {
-    let that = this
+  onLaunch: function() {
+    let that = this;
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
- 
-    wx.setStorageSync('logs', logs)
+    var logs = wx.getStorageSync('logs') || [];
+    logs.unshift(Date.now());
+
+    wx.setStorageSync('logs', logs);
     wx.getSystemInfo({
-      success: function (res) {
+      success: function(res) {
         that.globalData.scrollHeight = res.windowHeight;
         that.globalData.windowWidth = res.windowWidth;
-        console.log(res.windowHeight)
       }
-    })
+    });
+
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
-    })
+    });
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -28,21 +28,21 @@ App({
           wx.getUserInfo({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
-              this.globalData.userInfo = res.userInfo
+              this.globalData.userInfo = res.userInfo;
 
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {
-                this.userInfoReadyCallback(res)
+                this.userInfoReadyCallback(res);
               }
             }
-          })
+          });
         }
       }
-    })
+    });
   },
   globalData: {
     userInfo: null,
-    scrollHeight: 0,
+    scrollHeight: 0
   }
-})
+});
